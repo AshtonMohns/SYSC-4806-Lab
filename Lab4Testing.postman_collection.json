@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "558da173-1e31-473c-8995-d7040c003502",
+		"name": "Lab4Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Address Books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/addressBooks?page=0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addressBooks"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Buddy Info",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"testing buddy\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/addressBook/4599e346-da41-4462-a8b6-250645bae28f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addressBook",
+						"4599e346-da41-4462-a8b6-250645bae28f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Address Book By Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"testing buddy\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/addressBook/445c501c-3024-4030-b7ec-3c520bae476f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addressBook",
+						"445c501c-3024-4030-b7ec-3c520bae476f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Buddy Info",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/addressBook/445c501c-3024-4030-b7ec-3c520bae476f/buddy/b321b15c-30d3-40d2-b041-b8e995afd013",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addressBook",
+						"445c501c-3024-4030-b7ec-3c520bae476f",
+						"buddy",
+						"b321b15c-30d3-40d2-b041-b8e995afd013"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Address Book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n{\"name\": \"test1\"},\r\n{\"name\": \"test2\"}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/addressBook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addressBook"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
