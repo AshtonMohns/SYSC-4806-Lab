@@ -24,3 +24,8 @@ those files.
 
 The updated html for this lab can be found in the index.html class.
 There are functions to view and create address books and add a buddy.
+
+## Lab 6
+https://github.com/AshtonMohns/SYSC-4806-Lab/tree/main
+https://app.circleci.com/pipelines/github/AshtonMohns/SYSC-4806-Lab?branch=main&filter=all
+https://dashboard.heroku.com/apps/sysc4806lab-ashton/deploy/github
